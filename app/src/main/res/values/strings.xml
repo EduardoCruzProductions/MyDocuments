@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">MyDocuments</string>
+
+    <string name="app_name">Meus Documentos</string>
+
+    <!-- Tela de login -->
+
+    <string name="hint_login_login">Login</string>
+    <string name="hint_login_senha">Senha</string>
+    <string name="label_login_manter_conectado">Manter-se conectado</string>
+    <string name="label_btn_login_entrar">entrar</string>
+    <string name="label_btn_login_criar_conta">criar conta</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_criar_usuario">CriarUsuario</string>
+
 </resources>

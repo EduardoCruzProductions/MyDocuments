@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+
+    <!-- Padroes do sistema -->
+
+    <color name="colorPrimary">#483D8B</color> <!-- Cor da barra principal -->
+    <color name="colorPrimaryDark">#2C2553</color> <!-- Cor da barra onde tem horario -->
+    <color name="colorAccent">#1e1a3c</color> <!-- Cor do cursor -->
+
+
+    <!-- Tela de login -->
+
+    <color name="color_login_background">#696298</color>
+    <color name="color_login_background_textfield">#CEC7FF</color>
+    <color name="color_login_error_mesage">#FF6347</color>
+
 </resources>
