@@ -40,14 +40,24 @@ public class Login extends AppCompatActivity {
 
         }
 
-        if(persistVerifi()){
-            abrirHome();
-        }
-
         login = (EditText) findViewById(R.id.editText_Login_login);
         senha = (EditText) findViewById(R.id.editText_Login_senha);
         textError = (TextView) findViewById(R.id.textView_Login_error);
         persist = (CheckBox) findViewById(R.id.checkBox_login_persist);
+
+        Intent i = getIntent();
+
+        if(i.getBooleanExtra("autoPrepare",false)){
+
+            amont(i.getLongExtra("userId",-1));
+
+        }else{
+
+            if(persistVerifi()){
+                abrirHome();
+            }
+
+        }
 
     }
 
@@ -73,11 +83,9 @@ public class Login extends AppCompatActivity {
 
                 if(persist.isChecked()){
 
-                    System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Ta vindo aqui");
-
                     try{
 
-                        persistManage();
+                        persistManage(true);
                         abrirHome();
 
                     }catch (Exception e){
@@ -89,7 +97,17 @@ public class Login extends AppCompatActivity {
 
                 }else{
 
-                    abrirHome();
+                    try{
+
+                        persistManage(false);
+                        abrirHome();
+
+                    }catch (Exception e){
+
+                        Toast.makeText(getApplicationContext(), R.string.error, Toast.LENGTH_LONG).show();
+                        System.out.println("Mensagem de erro: "+e.getMessage());
+
+                    }
 
                 }
 
@@ -129,21 +147,25 @@ public class Login extends AppCompatActivity {
 
     }
 
-    private void persistManage(){
+    private void persistManage(boolean m){
 
-        for(Usuario user: userList){
+        if(m){
 
-            if(user.isPersist()){
+            for (Usuario user : userList) {
 
-                Usuario u = Usuario.findById(Usuario.class, user.getId());
-                u.setPersist(false);
+                if (user.isPersist()) {
+
+                    Usuario u = Usuario.findById(Usuario.class, user.getId());
+                    u.setPersist(false);
+
+                }
 
             }
 
         }
 
         Usuario u = Usuario.findById(Usuario.class, this.user.getId());
-        u.setPersist(true);
+        u.setPersist(m);
         u.save();
 
     }
@@ -166,4 +188,37 @@ public class Login extends AppCompatActivity {
         return valid;
 
     }
+
+    private void amont(long id){
+
+        if(id != -1){
+
+            Usuario u = new Usuario();
+
+            for(Usuario user: userList){
+
+                if(user.getId() == id){
+
+                    u = user;
+                    break;
+
+                }
+
+            }
+
+            login.setText(u.getLogin());
+            senha.setText(u.getSenha());
+
+            if(u.isPersist()){
+                persist.setChecked(true);
+            }else{
+                persist.setChecked(false);
+            }
+
+            this.user = u;
+
+        }
+
+    }
+
 }
