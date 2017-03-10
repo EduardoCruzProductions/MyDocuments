@@ -8,8 +8,6 @@
     <string name="hint_login_login">Login</string>
     <string name="hint_login_senha">Senha</string>
     <string name="label_login_manter_conectado">Manter-se conectado</string>
-    <string name="label_btn_login_entrar">entrar</string>
-    <string name="label_btn_login_criar_conta">criar conta</string>
     <string name="title_activity_home">Home</string>
     <string name="title_activity_criar_usuario">CriarUsuario</string>
     <string name="title_activity_criar_login">CriarLogin</string>
@@ -17,6 +15,7 @@
 
     <!-- Tela cadastro de usuario-->
 
+    <string name="label_title_criar_login">Criar login</string>
     <string name="hint_CriarLogin_nome_completo">Nome completo</string>
     <string name="hint_CriarLogin_login">Login</string>
     <string name="hint_CriarLogin_senha">Senha</string>
@@ -26,5 +25,15 @@
     <!-- Botoes -->
 
     <string name="btn_concluir">Concluir</string>
+    <string name="label_btn_login_entrar">entrar</string>
+    <string name="label_btn_login_criar_conta">criar conta</string>
+
+
+    <!-- Mensagens de erro -->
+
+    <string name="error_preencher_todos_campos">*Preencha todos os campos!</string>
+    <string name="error_senha_invalida">*Senha inválida!</string>
+    <string name="error_preencher_campo_senha">*Preencha o campo senha!</string>
+    <string name="error">Erro!</string>
 
 </resources>

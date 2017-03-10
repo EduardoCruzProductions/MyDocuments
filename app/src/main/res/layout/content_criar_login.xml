@@ -25,9 +25,10 @@
         android:hint="@string/hint_CriarLogin_nome_completo"
         android:fontFamily="casual"
         android:textSize="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:singleLine="true"
-        android:textColorHint="@color/colorAccent"/>
+        android:textColorHint="@color/colorAccent"
+        />
 
     <EditText
         android:layout_width="match_parent"
@@ -82,7 +83,8 @@
         android:padding="10dp"
         android:background="@color/colorPrimary"
         android:textColor="@color/color_login_background_textfield"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:onClick="cadastrar"/>
 
 
     <!-- Mensagem de erro -->

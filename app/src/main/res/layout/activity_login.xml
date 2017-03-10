@@ -94,7 +94,8 @@
         android:layout_centerHorizontal="true"
         android:padding="10dp"
         android:background="@color/colorPrimaryDark"
-        android:textColor="@color/color_login_background_textfield"/>
+        android:textColor="@color/color_login_background_textfield"
+        android:onClick="abrirCriarUsuario"/>
 
     <Button
         android:layout_width="match_parent"
