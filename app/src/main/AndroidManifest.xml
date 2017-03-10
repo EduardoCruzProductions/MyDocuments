@@ -38,6 +38,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="eduardocruz.mydocuments.Login" />
         </activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:parentActivityName=".Login"
+            android:theme="@style/Theme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eduardocruz.mydocuments.Login" />
+        </activity>
     </application>
 
 </manifest>

@@ -35,5 +35,7 @@
     <string name="error_senha_invalida">*Senha inválida!</string>
     <string name="error_preencher_campo_senha">*Preencha o campo senha!</string>
     <string name="error">Erro!</string>
+    <string name="error_get_user_list">Erro ao recuperar a lista de usuários!</string>
+    <string name="error_login_senha_errado">*Login ou senha incorreta!</string>
 
 </resources>
