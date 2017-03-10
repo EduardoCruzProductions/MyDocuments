@@ -23,7 +23,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
+        android:id="@+id/editText_Login_login"
         android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true"
         android:textSize="22dp"
@@ -41,7 +41,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText2"
+        android:id="@+id/editText_Login_senha"
         android:textSize="22dp"
         android:fontFamily="casual"
         android:background="@color/color_login_background_textfield"
@@ -50,11 +50,11 @@
         android:paddingLeft="10dp"
         android:paddingRight="5dp"
         android:hint="@string/hint_login_senha"
-        android:layout_below="@+id/editText"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText"
-        android:layout_alignRight="@+id/editText"
-        android:layout_alignEnd="@+id/editText"
+        android:layout_below="@+id/editText_Login_login"
+        android:layout_alignLeft="@+id/editText_Login_login"
+        android:layout_alignStart="@+id/editText_Login_login"
+        android:layout_alignRight="@+id/editText_Login_login"
+        android:layout_alignEnd="@+id/editText_Login_login"
         android:singleLine="true"
         android:layout_marginTop="10dp"
         android:inputType="textPassword"/>
@@ -63,22 +63,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/label_login_manter_conectado"
-        android:id="@+id/checkBox"
+        android:id="@+id/checkBox_login_persist"
         android:fontFamily="casual"
         android:textSize="18dp"
-        android:layout_below="@+id/editText2"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignStart="@+id/editText2"
-        android:layout_marginTop="10dp"/>
+        android:layout_below="@+id/editText_Login_senha"
+        android:layout_alignLeft="@+id/editText_Login_senha"
+        android:layout_alignStart="@+id/editText_Login_senha"
+        android:layout_marginTop="10dp"
+        android:checked="false" />
 
     <!-- Mensagem de erro -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:layout_below="@+id/checkBox"
-        android:layout_alignRight="@+id/editText2"
-        android:layout_alignEnd="@+id/editText2"
+        android:id="@+id/textView_Login_error"
+        android:layout_below="@+id/checkBox_login_persist"
+        android:layout_alignRight="@+id/editText_Login_senha"
+        android:layout_alignEnd="@+id/editText_Login_senha"
         android:textSize="18dp"
         android:layout_marginTop="10dp"
         android:fontFamily="casual"
@@ -106,4 +107,5 @@
         android:background="@color/colorPrimaryDark"
         android:textColor="@color/color_login_background_textfield"
         android:layout_marginBottom="10dp"/>
+
 </RelativeLayout>

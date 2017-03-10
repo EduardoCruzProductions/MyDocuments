@@ -14,4 +14,8 @@
     <color name="color_login_background_textfield">#CEC7FF</color>
     <color name="color_login_error_mesage">#FF6347</color>
 
+
+    <!-- Tela de cadastro de login -->
+
+    <color name="color_criarLogin_background">#C8C2EF</color>
 </resources>

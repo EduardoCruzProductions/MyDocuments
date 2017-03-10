@@ -2,6 +2,7 @@
 
     <string name="app_name">Meus Documentos</string>
 
+
     <!-- Tela de login -->
 
     <string name="hint_login_login">Login</string>
@@ -11,5 +12,19 @@
     <string name="label_btn_login_criar_conta">criar conta</string>
     <string name="title_activity_home">Home</string>
     <string name="title_activity_criar_usuario">CriarUsuario</string>
+    <string name="title_activity_criar_login">CriarLogin</string>
+
+
+    <!-- Tela cadastro de usuario-->
+
+    <string name="hint_CriarLogin_nome_completo">Nome completo</string>
+    <string name="hint_CriarLogin_login">Login</string>
+    <string name="hint_CriarLogin_senha">Senha</string>
+    <string name="hint_CriarLogin_confirmar_senha">Confirmar senha</string>
+
+
+    <!-- Botoes -->
+
+    <string name="btn_concluir">Concluir</string>
 
 </resources>
